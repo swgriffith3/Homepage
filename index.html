@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
+  <title>Homepage</title>
+</head>
+
+<body>
+
+  <!-- hero section -->
+  <main class="hero">
+    <div class="hero-inner">
+
+      <!-- clock -->
+      <section id="clock">
+        <div id="time">
+
+          <div class="clock-numbers">
+            <span id="hours">Have an amazing time</span>
+          </div>
+
+          <div class="clock-numbers">
+            <span id="time-colon">:</span>
+          </div>
+
+          <div class="clock-numbers">
+            <span id="minutes"></span>
+          </div>
+
+          <div class="amPM">
+            <span id='am-pm'></span>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- weather -->
+      <section>
+        <div class="weather-main">
+
+          <div class="weather-search">
+            <input type="text" autocomplete="off" class="search-box" placeholder="Search city weather" />
+          </div>
+
+          <main class="weather-info">
+            <section>
+
+              <div class="location">
+                <div class="city">City</div>
+              </div>
+
+              <div class="current">
+                <div class="temp">Temp<span>°f</span></div>
+                <div class="weather">Condition</div>
+              </div>
+
+            </section>
+          </main>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <!-- scripts -->
+  <script src="index.js"></script>
+</body>
+
+</html>

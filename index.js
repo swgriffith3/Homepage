@@ -29,7 +29,7 @@ let interval = setInterval(clock, 1000);
 // ---- Weather ----
 
 const api = {
-  key: '0f2d6c7b6b5e24c31d6df3d85bfbbb2c',
+ // key: 'your key here',
   base: 'https://api.openweathermap.org/data/2.5/',
 };
 

@@ -1,3 +1,5 @@
+/* 3840x2160 */
+
 * {
   margin: 0;
   padding: 0;
@@ -26,16 +28,12 @@ body html {
 .hero-inner {
   width: 100vw;
   height: 100vh;
-
-  /* Flexbox stuff */
   display: flex;
   justify-content: center;
   align-items: center;
-
-  /* Background styles */
-  background-image: url(/hero.jpg);
+  background-image: url('https://source.unsplash.com/user/on3ac3short/likes/3840x2160');
   background-size: cover;
-  background-position: center center;
+  background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
@@ -50,15 +48,6 @@ body html {
   justify-content: right;
 }
 
-#am-pm {
-  background: rgba(255, 255, 255, 0);
-  color: rgb(170, 170, 243);
-  font-size: 5em;
-  margin-left: 12%;
-  position: absolute;
-  top: 35%;
-}
-
 #hours,
 #minutes,
 #time-colon {
@@ -68,8 +57,7 @@ body html {
 }
 
 #hours,
-#minutes,
-#am-pm {
+#minutes {
   z-index: 9;
   box-shadow: none;
   text-transform: uppercase;
@@ -88,19 +76,16 @@ body html {
   top: 20px;
   right: 26px;
   font-size: 18px;
-}
-
-.weather-main section {
   flex: 1 1 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
   color: rgb(255, 255, 255);
-  text-shadow: 0px 0px 40px rgb(182, 182, 182);
+  text-shadow: 0px 0px 20px rgb(126, 126, 126);
 }
 
-.weather-search {
+/* .weather-search {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -119,13 +104,13 @@ body html {
   background-color: rgba(255, 255, 255, 0.3);
   border-radius: 16px;
   padding-left: 10px;
-}
+} */
 
-.location .city {
+#location {
   font-size: 1.5em;
 }
 
-.current .temp {
+#temperature,
+#description {
   font-size: 2em;
-  margin-bottom: 5px;
 }

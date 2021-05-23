@@ -23,48 +23,12 @@ let interval = setInterval(clock, 1000);
 
 // ---- Weather ----
 
-// const api = {
-//   key: 'ff4431a8f6179f4f6191397cc3d614ef',
-//   base: 'https://api.openweathermap.org/data/2.5/',
-// };
-
-// const searchbox = document.querySelector('.search-box');
-// searchbox.addEventListener('keypress', setQuery);
-
-// function setQuery(evt) {
-//   if (evt.keyCode == 13) {
-//     getResults(searchbox.value);
-//     console.log(searchbox.value);
-//   }
-// }
-
-// function getResults(query) {
-//   fetch(`${api.base}weather?q=${query}&units=imperial&APPID=${api.key}`)
-//     .then((weather) => {
-//       return weather.json();
-//     })
-//     .then(displayResults);
-// }
-
-// function displayResults(weather) {
-//   console.log(weather);
-//   let city = document.querySelector('.location .city');
-//   city.innerText = `${weather.name}, ${weather.sys.country}`;
-
-//   let temp = document.querySelector('.current .temp');
-//   temp.innerHTML = `${Math.round(weather.main.temp).toFixed(0)}<span>°f</span>`;
-
-//   let weather_el = document.querySelector('.current .weather');
-//   weather_el.innerText = weather.weather[0].main;
-// }
-
 function getWeather() {
   let temperature = document.getElementById('temperature');
   let description = document.getElementById('description');
   let location = document.getElementById('location');
 
   let api = 'https://api.openweathermap.org/data/2.5/weather';
-  let apiKey = 'ff4431a8f6179f4f6191397cc3d614ef';
 
   location.innerHTML = 'allow location to retrieve weather';
 

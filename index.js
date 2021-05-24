@@ -19,7 +19,8 @@ function clock() {
   timeColon.innerHTML = ':';
 }
 
-let interval = setInterval(clock, 1000);
+clock();
+setInterval(clock, 1000);
 
 // ---- Weather ----
 
@@ -29,8 +30,9 @@ function getWeather() {
   let location = document.getElementById('location');
 
   let api = 'https://api.openweathermap.org/data/2.5/weather';
+  let apiKey = 'ff4431a8f6179f4f6191397cc3d614ef';
 
-  location.innerHTML = 'allow location to retrieve weather';
+  location.innerHTML = 'Location required to retrieve weather';
 
   navigator.geolocation.getCurrentPosition(success, error);
 
@@ -52,8 +54,9 @@ function getWeather() {
   }
 
   function error() {
-    location.innerHTML = 'Unable to retrieve your location';
+    location.innerHTML = 'Unable to retrieve weather for your location';
   }
 }
 
 getWeather();
+setInterval(getWeather, 1800 * 1000);

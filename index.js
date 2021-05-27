@@ -60,3 +60,5 @@ function getWeather() {
 
 getWeather();
 setInterval(getWeather, 1800 * 1000);
+
+// ---- My Site Links ----
